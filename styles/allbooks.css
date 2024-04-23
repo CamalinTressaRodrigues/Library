@@ -1,0 +1,17 @@
+.all-books{
+    background-image: url("../images/bckgnd5.jpg");
+}
+.card-img-top {
+    max-width: 150px; 
+    height: auto; 
+    padding: 10px;
+}
+
+.books{
+    background-image: url("../images/bckgnd5.jpg");  
+}
+
+.book-details img{
+    max-height: auto;
+    height: 650px;
+}

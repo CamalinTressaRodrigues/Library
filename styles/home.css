@@ -1,0 +1,26 @@
+/* Hero section */
+body {
+    background-image: url("../images/bkgrnd1.jpg"); 
+    background-size: cover;
+}
+.hero-section{
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+    /* height: 100vh; */
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight:bolder;
+}
+
+.hero-section p {
+    font-size: 2rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

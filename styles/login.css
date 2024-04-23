@@ -1,0 +1,24 @@
+/* login page */
+
+.loginpage {
+    background-image: url("../images/backgrnd2.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.loginpage h3{
+    text-align: center;
+}
+.my_login{
+    position: relative;
+    top:150px; left:100px;
+}
+.my_login h4{
+    position: relative;
+    left:150px
+}
+.my_login p {
+    padding: 10px;
+}
+
+
+
