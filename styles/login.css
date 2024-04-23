@@ -8,17 +8,30 @@
 .loginpage h3{
     text-align: center;
 }
-.my_login{
+
+@media screen and (min-width:860px) {
+    .my_login{
     position: relative;
     top:150px; left:100px;
-}
-.my_login h4{
+    }
+    .my_login h4{
     position: relative;
     left:150px
-}
-.my_login p {
+    }
+    .my_login p {
     padding: 10px;
+    }
 }
 
+@media screen and (max-width:859px)  {
+    .my_login{
+    position:relative
+    }
+    .my_login h4{
+    position: relative;
+    }
+    .my_login p {
+    padding: 10px;
+    }
 
-
+}
