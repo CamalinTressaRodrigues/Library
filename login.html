@@ -48,7 +48,7 @@
     <h3>You want Weapons? We are in a LIBRARY! The best weapons in the WORLD!</h3>
     <br>
 
-    <form>
+    <form action="./index.html" onsubmit="return validate()">
     <div class="row">
         <div class="col-lg-3"></div>
 
@@ -57,10 +57,12 @@
             <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
+                <label for="error" id="Emailerror"></label>
             </div>
             <div class="form-floating">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
+                <label for="error" id="pwderror"></label>
             </div><br>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Sign in</button>
@@ -95,7 +97,7 @@
             </li>
         </ul>
     </footer>
-
+    <script src="./login.js"></script>
 
 </body>
 </html>
