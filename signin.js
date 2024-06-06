@@ -27,7 +27,7 @@ function Emailvalidate() {
         return true;
     }
     else {
-        Emailerror.innerHTML = "Invalid";
+        Emailerror.innerHTML = "Invalid Email";
         Emailerror.style.color = "red";
         return false;
     }
@@ -38,20 +38,21 @@ function passValidate() {
     let mediumRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
     if (strongRegex.test(password.value)) {
-        pwderror.innerHTML = "Valid";
+        pwderror.innerHTML = "Strong Password";
         pwderror.style.color = "green";
-        pwderror.style.border = "4px solid green";
+        // pwderror.style.border = "4px solid green";
         return true;
     } else if (mediumRegex.test(password.value)) {
-        pwderror.innerHTML = "Valid";
-        pwderror.style.color = "green";
-        pwderror.style.border = "4px solid orange";
-        return true;
+        alert("Password must be at least 8 characters long, contain one uppercase letter and lowercase letter");
+        pwderror.innerHTML = "Medium Password";
+        pwderror.style.color = "orange";
+        // pwderror.style.border = "4px solid orange";
+        return false;
     } else {
         alert("Password must be at least 8 characters long, contain one uppercase letter, one lowercase letter, and one digit.");
-        pwderror.innerHTML = "Invalid";
+        pwderror.innerHTML = "Poor Password";
         pwderror.style.color = "red";
-        pwderror.style.border = "4px solid red";
+        // pwderror.style.border = "4px solid red";
         return false;
     }
 }
@@ -65,7 +66,7 @@ function mobvalidate() {
     }
     else {
         alert("Please enter a valid phone number");
-        MobNumerror.innerHTML = "Invalid";
+        MobNumerror.innerHTML = "Invalid Phone Number";
         MobNumerror.style.color = "red";
         return false;
     }

@@ -1,8 +1,8 @@
 let email = document.getElementById("email");
 let password = document.getElementById("password");
 
-let Emailerror = document.getElementById("Emailerror");
-let pwderror = document.getElementById("pwderror");
+let Emailerror = document.getElementById("EmailError");
+let pwderror = document.getElementById("pwdError");
 
 function validate() {
     let emailval = Emailvalidate();
@@ -35,20 +35,21 @@ function passValidate() {
     let mediumRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
     if (strongRegex.test(password.value)) {
-        pwderror.innerHTML = "Valid";
+        pwderror.innerHTML = "Strong";
         pwderror.style.color = "green";
-        pwderror.style.border = "4px solid green";
+        // pwderror.style.border = "4px solid green";
         return true;
     } else if (mediumRegex.test(password.value)) {
-        pwderror.innerHTML = "Valid";
-        pwderror.style.color = "green";
-        pwderror.style.border = "4px solid orange";
-        return true;
+        alert("Password must be at least 8 characters long, contain one uppercase letter and lowercase letter");
+        pwderror.innerHTML = "Medium";
+        pwderror.style.color = "orange";
+        // pwderror.style.border = "4px solid orange";
+        return false;
     } else {
         alert("Password must be at least 8 characters long, contain one uppercase letter, one lowercase letter, and one digit.");
-        pwderror.innerHTML = "Invalid";
+        pwderror.innerHTML = "Poor";
         pwderror.style.color = "red";
-        pwderror.style.border = "4px solid red";
+        // pwderror.style.border = "4px solid red";
         return false;
     }
 }
